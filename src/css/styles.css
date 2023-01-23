@@ -1,0 +1,153 @@
+body{
+    font-family: 'Mulish', sans-serif;
+}
+.header .osuLogo{
+    justify-content: flex-start;
+    width: 100px;
+    margin-top: 0xp;
+
+}
+/*
+.header .osuLogo:hover{
+    width: 110px;
+    white-space: inherit;
+
+}
+*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+.header .openerLogo{
+    justify-content: flex-end;
+    width: 5%;
+    height: 5%;
+}
+
+.header .menu-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.line{
+    max-width:1920px ;
+    max-height:1080px ;
+    display: flex;
+    flex-direction:column ;
+
+    padding: 100px;
+    opacity:15% ;
+}
+
+.background_video{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.background_video .video{
+    height: 100vh;
+}
+
+.background_video::after{
+    content: "";
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+
+}
+
+.header nav li a {
+    text-align: right;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+
+.header nav li a:hover {
+    background-color: #f472acd0;
+}
+
+.container{
+
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 100px 300px 30px;
+    font-weight: 400px;
+    font-size: 20px;
+}
+
+.container .image-osu{    
+    max-width: 400px;
+    margin-top: 0%;
+
+}
+
+.container .text{
+    color: rgba(255, 255, 255, 0.576);
+    margin-top: 0px;
+    max-width: 1000px;
+    opacity: 70%;
+
+}
+
+.container .osu-titulo{
+
+    max-width: 250px;
+
+    margin-bottom: 0px;
+    margin-left:50%;
+    padding-bottom:100px;
+}
+
+.container .informations{
+    max-width: 1920px;
+    color : #a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0px;
+    padding: 20px;
+
+}
+
+.container .botonDescarga{
+    background-color: blue;
+    background-image:url("boton.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding :15px;
+    font-size: 18px;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+    white-space:sa inherit;
+    justify-content: center;
+    margin-top: 130px;
+    height:25%;
+}
+
+.container .botonDescarga:hover {
+    transform: scale(1.1);
+}
